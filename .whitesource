@@ -1,3 +1,6 @@
 {
-  "settingsInheritedFrom": "cameroncheung-mend/whitesource-config@main"
+  "settingsInheritedFrom": "cameroncheung-mend/whitesource-config@main",
+  "scanSettings": {
+    "configMode": "LOCAL"
+  }
 }
