@@ -1,7 +1,29 @@
 {
-  "settingsInheritedFrom": "cameroncheung-mend/whitesource-config@main",
-  "scanSettings": {
-    "configMode": "LOCAL"
-  }
+    "scanSettings": {
+        "configMode": "AUTO",
+        "baseBranches": [
+            "master",
+            "main",
+            "develop"
+        ]
+    },
+    "checkRunSettings": {
+        "displayMode": "diff",
+        "vulnerableCheckRunConclusionLevel": "failure",
+        "useMendStatusNames": true
+    },
+    "pullRequestStatusSettings": {
+        "displayMode": "diff",
+        "vulnerablePullRequestStatus": "failure",
+        "useMendStatusNames": true
+    },
+    "issueSettings": {
+        "minSeverityLevel": "LOW",
+        "issueType": "DEPENDENCY"
+    },
+    "remediateSettings": {
+        "workflowRules": {
+            "enabled": false
+        }
+    }
 }
- 
